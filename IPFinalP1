@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2023 Concepts by Derek Lyon</title>
+
+<!-- This is a comment line which won't be rendered by any HTML browser -->
+
+  <style>
+.title {
+  background-color: lightskyblue;
+  color: red;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 32px;
+}
+
+table {
+  border: 1px solid black;
+}
+
+.sectionheading {
+  background-color: #a77;
+  color: black;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: lightcyan;
+}
+</style>
+
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="title"> 25 of the most useful concepts from Internet Programming </div>
+</div>
+
+<div class="sectionheading"> Important concepts</div>
+
+<button class="collapsible">Is javascript array mutable?</button>
+<div class="content">
+  <p>Objects and arrays are mutable by default. However, primitive values are not. Once a primitive value is created it cannot be changed, but the variable that holds it can be reassigned.</p>
+</div>
+
+<button class="collapsible">What is a compound selector? What is attribute selector?  </button>
+<div class="content">
+  <p> Attribute selector selects all of the elements with a given attribute. <br> 
+  Compound selector is a combination of multiple simple selectors.  The element must match all simple selectors. <br> Other selectors:
+  <ul>
+    <li>Universal selector</li>
+    <li>Type selector</li>
+    <li>class selector</li>
+    <li>ID selector</li>
+    <li>Simple selector</li>
+    <li>Complex selector</li>
+    <li>Relative selector</li>
+    <li>Selector list</li>
+  </ul></p>
+</div>
+
+<button class="collapsible">Comparison of json, xml, yaml, and markdown. </button>
+<div class="content">
+	<p>
+		<ol>
+			<li>XML: A metalanguage that allows the user to define their own unique markup language so it can be displayed. </li>
+			<li>JSON: Open standard file format. Uses human-readable text to store and transmit data objects. </li>
+			<li>YAML: Human-readable data serialization language.  Often used for configuration files and in applications that data is being stored and sent.</li>
+      <li>Markdown: Markup language that describes how text will look on a page. It is a style that makes writing documents easy to define.</li>
+		</ol>
+		</p>
+
+</div>
+
+<button class="collapsible">Name two js libraries and two js frameworks. </button>
+<div class="content">
+  <p>Library:
+  <ul>
+    <li>jQuery</li>
+    <li>React.js</li>
+  </ul>
+Framework:
+<ul>
+  <li>Angularjs</li>
+  <li>Bootstrap</li>
+</ul></p>
+</div>
+
+<button class="collapsible">Four main differences between angular and react </button>
+<div class="content">
+  <p><ol>
+    <li>React is a JavaScript library, angular is a front-end framework.</li>
+    <li>React uses one-way binding and virtual DOM. Angular uses two-way binding and real DOM.</li>
+    <li>React is faster due to smaller bundle sizes.</li>
+    <li>React uses JavaScript and JSX, whereas angular uses TypeScript and HTML.</li>
+  </ol></p>
+</div>
+
+<button class="collapsible">Task-runner Examples </button>
+<div class="content">
+  <ol>
+    <li>Webpack</li>
+    <ul>
+      <li>Known as the "most powerful bundler"</li>
+      <li>Produces machine-readable output that can easily be parsed and interpreted by an IDE</li>
+    </ul>
+    <li>Gulp</li>
+    <ul>
+      <li>Known for its superior build speed</li>
+      <li>Uses Node.js as its platform</li>
+      <li>Only uses JS code to help run front-end tasks</li>
+    </ul>
+  </ol>
+</div>
+
+<button class="collapsible">Explain npm, npx, nvm, package.json, and package-lock.json</button>
+<div class="content">
+<ul>
+  <li>Npm(Node package manager):   
+  <ul>
+    <li>Defined in package.json files</li>
+    <li>Library and registry for JS software packages</li> 
+  </ul>
+  </li>
+  <li>Npx:</li>
+    <ul>
+      <li>Tool used to make install and management of dependencies within the npm registry easy</li>
+      <li>Checks if a command or package exists in the path and runs it if it is present</li>
+    </ul>
+  <li>Nvm:</li>
+  <ul>
+    <li>Configuration file created for PlayStation 2 BIOS</li>
+    <li>Contain data such as language and time zone</li>
+  </ul>
+  <li>Package.json</li>
+  <ul>
+    <li>Contains descriptive and functional metadata such as; name, version, and dependencies</li>
+    <li>Helps npm with information to help identify teh project and handle dependencies</li>
+  </ul>
+  <li>Package-lock.json</li>
+  <ul>
+    <li>Lockfile that contains information on dependencies or packages installed for a node.js project</li>
+    <li>Includes the exact version numbers</li>
+  </ul>
+</ul>
+</div>
+
+<button class="collapsible">What are the differences among CSS, LESS, and SASS</button>
+<div class="content">
+  <ul>
+    <li>CSS (Cascading Stylesheet)</li>
+      <p>Simple style sheet used to design html or xml webpages. </p>
+    <li>LESS (Leaner Stylesheet) and SASS (Syntactically Awesome Stylesheet)</li>
+      <p>Backwards-compatible extensions for CSS. Make CSS more maintainable, themeable, and extendable.</p>
+  </ul>
+</div>
+
+<button class="collapsible">What are backbone, ember, underscore, and bootstrap? </button>
+<div class="content">
+  <ul>
+    <li>Backbone</li>
+      <p>Core network which helps interconnect networks within a computer network. Provides a path for the exchange of information between different LANs or subnetworks.</p>
+    <li>Ember</li>
+      <p>Ember.js is a tested and productive JS framework for building modern web apps.</p>
+    <li>Underscore</li>
+      <p>Underscore.js is a commonly used JS library that provides functions to facilitate web development. 
+It contains helper functions such as map and filter.</p>
+    <li>Bootstrap</li>
+      <p>Bootstrap is an open source front-end framework for creating websites and web apps. It contains collections of syntax used for template designs.</p>
+  </ul>
+</div>
+
+<button class="collapsible">Identify three alternatives to Tailwind CSS</button>
+<div class="content">
+  <ul>
+    <li>Onsen UI</li>
+      <p>Framework for developing hybrid and online mobile apps. Supports all frameworks due to CSS components being written in cssnext.</p>
+    <li>Material UI</li>
+      <p>React based components. It is a package that allows the importing of multiple components in React apps.</p>
+    <li>Mueller</li>
+      <p>Based on Compass and SASS. Used for prototyping, but can also handle background, borders, margins, and more design components.</p>
+  </ul>
+  <p></p>
+</div>
+
+<button class="collapsible">What are data-attributes? </button>
+<div class="content">
+  <p>These are used to store custom data specific to a page or application. Gives the ability to embed custom data attributes across all HTML elements.</p>
+</div>
+
+<button class="collapsible">Describe four popular template engines or libraries</button>
+<div class="content">
+  <ul>
+    <li>Pug</li>
+    <p>Pug generates HTML documents by compiling functions that take in data.</p>
+    <li>EJS</li>
+    <p>EJS is a simple templating language that generates HTML markup by using JavaScript.</p>
+    <li>Haml.js</li>
+    <p>Haml.js is a simple templating language that has a couple core rules. These are:
+    <ul>
+    <li>Markup should be as user friendly as the page rendered</li>
+      <li>Using indentation instead of text, it removes repetition</li>
+      <li>Haml focuses on proper indentation to make it easier to read</li>
+      <li>HTML structure should be very clear</li>
+    </ul>
+    </p>
+    <li>Marko</li>
+    <p>Marko is a fast, lightweight HTML based template engine. It compiles to CommonJS modules and supports streaming, async rendering, and custom tags.      </p>
+  </ul>
+</div>
+
+<button class="collapsible">Asynchronous vs synchronous and blocking calls vs nonblocking calls</button>
+<div class="content">
+  <br>
+  <table border="1px solid black">
+    <tr>
+      <th>Asynchronous</th>
+      <th>Synchronous</th>
+    </tr>
+    <tr>
+      <td>Asynchronous is a multitasking program. It allows the system to jump between tasks and alerting the system when its complete.</td>
+      <td>Synchronous programming works through tasks one at a time. It checks off a task when completed then moves to the next.</td>
+    </tr>
+  </table>
+  <br>
+  <table border="1px solid black">
+    <tr>
+      <th>Blocking calls</th>
+      <th>Nonblocking calls</th>
+    </tr>
+    <tr>
+      <td>Waits for the I/O operation to complete before returning, results are synchronous.</td>
+      <td>Return immediately without results and uses other methods to check for completion.</td>
+    </tr>
+  </table>
+    <br>
+</div>
+
+<button class="collapsible">Describe fetch, ajax vs promise, and callback functions. </button>
+<div class="content">
+  <ul>
+    <li>Fetch </li>
+    <p>Fetch is a function that retrieves data in a software program, script or hardware device. It pulls the data from memory.</p>
+    <li>Callback functions</li>
+    <p>Callback functions are functions passed into another function as an argument. It is executed inside the main function.</p>
+    <li>
+      <table border="1px solid black">
+        <tr>
+          <th>AJAX</th>
+          <th>Promise</th>
+        </tr>
+        <tr>
+          <td><ul>
+            <li>Specific asynchronous operation</li>
+            <li>Can be used with traditional callback or wrapped in a promise. </li>
+          </ul></td>
+          <td><ul>
+            <li>Tool for managing asynchronous operations.</li>
+            <li>Keep track of when asynchronous operation completes and what the result is. </li>
+          </ul></td>
+        </tr>
+      </table>
+    </li>
+  </ul>
+</div>
+
+<button class="collapsible">What are express, express routing, and express middleware? </button>
+<div class="content">
+  <br>
+  <table border="1px solid black">
+    <tr>
+      <th>Express</th>
+      <th>Express Routing</th>
+      <th>Express middleware</th>
+    </tr>
+    <tr>
+      <td>Web framework written in JS and hosted within the node.js runtime environment.</td>
+      <td>Refers to how an application's endpoints respond to client requests.</td>
+      <td>A request handler that has access to the application's request-response cycle. It can send the response to the server before the request.</td>
+    </tr>
+  </table>
+  <br>
+</div>
+
+<button class="collapsible">Three main phases in react. </button>
+<div class="content">
+  <table border="1px solid black">
+    <tr>
+      <th>Mounting</th>
+      <th>Updating</th>
+      <th>Unmounting</th>
+    </tr>
+    <tr>
+      <td>Putting elements into the DOM</td>
+      <td>Component is updated whenever a change is made in the component's state or props.</td>
+      <td>Component is removed from the DOM.</td>
+    </tr>
+    <tr>
+      <td>Four built-in methods that get called in order:
+      <ol>
+        <li>constructor()</li>
+        <li>getDerivedStateFromProps()</li>
+        <li>render()</li>
+        <li>componentDidMount()</li>
+      </ol></td>
+      <td>Five built-in methods get called in order:
+      <ol>
+        <li>getDerivedStateFromProps()</li>
+        <li>shouldComponentUpdate()</li>
+        <li>render()</li>
+        <li>getSnapshotBeforeUpdate()</li>
+        <li>componentDidUpdate()</li>
+      </ol></td>
+      <td>There is only one built-in function:
+      <ol>
+        <li>componentWillUnmount()</li>
+      </ol></td>
+    </tr>
+  </table>
+</div>
+
+  <button class="collapsible">Define the HTTP methods POST, GET, PUT, PATCH, and DELETE. Name two other methods. </button>
+<div class="content">
+  <br>
+  <table border="1px solid black">
+    <tr>
+      <th>POST</th>
+      <th>GET</th>
+      <th>PUT</th>
+      <th>PATCH</th>
+      <th>DELETE</th>
+      <th>Other Examples</th>
+    </tr>
+    <tr>
+      <td>Used to create new resources</td>
+      <td>Retrieves a representation of a resource</td>
+      <td>Updates or creates a resource</td>
+      <td>Applies partial modifications to a resource</td>
+      <td>Used to delete a resource</td>
+      <td>
+        <ul>
+          <li>CONNECT</li>
+          <li>OPTIONS</li>
+          <li>TRACE</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <br>
+</div>
+
+<button class="collapsible">Describe toolchain, pipeline, bundler, webpack, transpiler, and watcher/HMR? </button>
+<div class="content">
+  <ul>
+    <li>Toolchain</li>
+    <p>
+      Set of programming tools used to perform complex software development task or a software product.
+    </p>
+    <li>Pipeline</li>
+    <p>
+      Process that drives software development through a path of building, testing, and deploying code.
+    </p>
+    <li>Bundler</li>
+    <p>
+      The combination of two or more software offered in one package.  Usually contains the main program and bundleware.
+    </p>
+    <li>Webpack</li>
+    <p>
+      Webpack is a free, open-source module bundler for JS. It can transform front-end assets such as HTML, CSS and images if loaders are included.
+    </p>
+    <li>Transpiler</li>
+    <p>
+      Takes a program written in a specific language as input and produces a source code that does the same thing, but in a different programming language.
+    </p>
+    <li>Watcher/HMR</li>
+    <p>
+      HMR allows for modules to get updated without a full reload. The watcher is an elasticsearch feature that allows you to create actions based on conditions. These conditions are periodically evaluated using queries.
+    </p>
+  </ul>
+</div>
+
+<button class="collapsible">Define GCP cloud run, firestore, bucket, and GKE. </button>
+<div class="content">
+  <ul>
+    <li>GCP cloud run</li>
+    <p>
+      Managed, compute platform taht enables you to run containers via requests or events
+    </p>
+    <li>Firestore</li>
+    <p>
+      NoSQL document database that lets you store, sync, and query data for mobile and web applications
+    </p>
+    <li>Bucket</li>
+    <p>
+      A bucket is a data type that groups objects together
+    </p>
+    <li>GKE (Google Kubernetes Engine)</li>
+    <p>
+      It is a managed service that is used to deploy and operate containerized applications at scale
+    </p>
+  </ul>
+</div>
+
+<button class="collapsible">What is the main difference between OAuth1 and OAuth2? </button>
+<div class="content">
+  <p>The main difference is OAuth1 uses two security tokens on all API calls and use them to generate the signature. OAuth2 uses only one security token and does not require a signature.</p>
+</div>
+
+<button class="collapsible">Define localStorage, indexedDB, session and session storage. </button>
+<div class="content">
+  <br>
+  <table border="1px solid black">
+    <tr>
+      <th>localStorage</th>
+      <th>indexedDB</th>
+      <th>Session</th>
+      <th>Session storage</th>
+    </tr>
+    <tr>
+      <td>localStorage is a property that allows JS sites and apps to save key-value pairs in the web browser with no expiration date.</td>
+      <td>Large-scale NoSQL storage system. Allows you to store almost anything in the user's browser.</td>
+      <td>A session is a method to store information in variables to be used on multiple pages. 
+The information is not stored on the users computer.</td>
+      <td>Allows you to store data in the browser depending on the system memory and the data stored. Closing the browser will clear all the data stored in the session storage.</td>
+    </tr>
+  </table>
+  <br>
+</div>
+
+<button class="collapsible">Describe the concepts: client-server application, socket programming, IP address, TCP port, and http. </button>
+<div class="content">
+  <br>
+  <table border="1px solid black">
+    <tr>
+      <th>Client-server application</th>
+      <th>Socket programming</th>
+      <th>IP address</th>
+      <th>TCP port</th>
+      <th>http</th>
+    </tr>
+    <tr>
+      <td>A client-server application consists of a client program that consumes services by a server program.</td>
+      <td>Socket programming is a way to connect two nodes over a network to establish a means of communication between the nodes.</td>
+      <td>An internet protocol address is a series of numbers that identifies any device on a network.</td>
+      <td>TCP ports are ports that comply with the transmission control protocols. They are a global communication standard that devices use to reliably transmit data.</td>
+      <td>HTTP or hypertext transfer protocol, is used to load web pages using hypertext links.</td>
+    </tr>
+  </table>
+  <br>
+</div>
+
+<button class="collapsible">What are the differences between nextjs, meteorjs and expressjs? </button>
+<div class="content">
+  <br>
+  <table border="1px solid black">
+    <tr>
+      <th>Nextjs</th>
+      <th>Meteorjs</th>
+      <th>Expressjs</th>
+    </tr>
+    <tr>
+      <td>Flexible react framework that gives building blocks to create fast web apps.</td>
+      <td>Meteorjs is a mature open source platform that allows for building and scaling efficiently.</td>
+      <td>Expressjs is a minimal and flexible nodejs web application framework. It provides a robust set of features for web and mobile apps.</td>
+    </tr>
+  </table>
+  <br>
+</div>
+
+<button class="collapsible">Explain media queries, viewport, and grid layout. </button>
+<div class="content">
+  <br>
+  <table border="1px solid black">
+    <tr>
+      <th>Media queries</th>
+      <th>Viewport</th>
+      <th>Grid layout</th>
+    </tr>
+    <tr>
+      <td>Media query consists of a media type and can contain one or more expressions which resolve to true or false.</td>
+      <td>It represents a polygonal area in computer graphics that are currently being viewed.</td>
+      <td>It is a CSS layout module that offers a grid based layout system with rows and columns. It makes it easier to design web pages.
+      </td>
+    </tr>
+  </table>
+  <br>
+</div>
+
+<button class="collapsible">What is vanilla JS? What are the differences between jquery and jqueryUI? </button>
+<div class="content">
+  <h3>Vanilla JS:</h3>
+  <p>Vanilla JavaScript is pure JS that is written without the aid of a JS library.</p>
+  <h3>jQuery vs jQueryUI</h3>
+    <p>jQuery is the core library. jQueryUI is built on top of it and has its own set of features.</p>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+</body>
+</html>
